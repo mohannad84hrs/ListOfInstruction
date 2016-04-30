@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39E9F969-B203-4B7B-9DA2-51242EF982FB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MistaksInHaramin.Droid</RootNamespace>
+    <AssemblyName>MistaksInHaramin.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ExifLib.PCL.1.0.1\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.4.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Android, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.4.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Design.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.CardView.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.MediaRouter.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.RecyclerView.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Maps.2.0.0.6484\lib\MonoAndroid10\Xamarin.Forms.Maps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.Android, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Maps.2.0.0.6484\lib\MonoAndroid10\Xamarin.Forms.Maps.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Base.26.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Maps.26.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LocationProvider_Android.cs" />
+    <Compile Include="NetworkConnection_Android.cs" />
+    <Compile Include="SaveAndLoad_Android.cs" />
+    <Compile Include="SplashActivity .cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shareable_Android.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\VideoView.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\SplashScreen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\settings.png" />
+    <AndroidResource Include="Resources\drawable\icon2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\mistak.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ahkam.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\info.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\arrow_thin_right.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\book_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\book_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bookmark_icon_round.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cross_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gear_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\gree_arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\hands_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\hands_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\image_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\info_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kaaba_green.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kaaba_green_faded.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\madinah_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\madinah_icon_faded.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_enlarge_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\share_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\small_icon_bookmark.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\small_icon_bookmark_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\x_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\x_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\arrow_thin_right.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\book_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\book_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bookmark_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bookmark_icon_round.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cross_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gear_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\gree_arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\hands_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\hands_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\image_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\info_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kaaba_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kaaba_green_faded.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\madinah_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\madinah_icon_faded.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\map_enlarge_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\map_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\map_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\share_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\small_icon_bookmark.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\small_icon_bookmark_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\x_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\x_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\arrow_thin_right.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\book_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\book_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bookmark_icon_round.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cross_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gear_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\gree_arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hands_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hands_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\image_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\info_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kaaba_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kaaba_green_faded.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\madinah_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\madinah_icon_faded.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_enlarge_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\share_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\small_icon_bookmark.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\small_icon_bookmark_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\x_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\x_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\arrow_thin_right.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\book_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\book_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bookmark_icon_round.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cross_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gear_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\gree_arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\hands_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\hands_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\image_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\info_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\kaaba_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\kaaba_green_faded.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\madinah_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\madinah_icon_faded.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\map_enlarge_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\map_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\map_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\share_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\small_icon_bookmark.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\small_icon_bookmark_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\x_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\x_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\arrow_thin_right.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\book_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\book_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bookmark_icon_round.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\cross_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\gear_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\gree_arrow_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\hands_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\hands_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\image_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\info_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\kaaba_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\kaaba_green_faded.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\madinah_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\madinah_icon_faded.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\map_enlarge_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\map_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\map_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\share_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\small_icon_bookmark.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\small_icon_bookmark_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\x_icon_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\x_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\x_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\x_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\x_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\x_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\x_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable\gray.png" />
+    <AndroidResource Include="Resources\drawable\black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\enlarge_map_gree_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\home_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\location_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\enlarge_map_gree_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\home_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\location_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\enlarge_map_gree_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\home_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\location_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\enlarge_map_gree_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\home_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\location_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\enlarge_map_gree_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\home_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\location_icon_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\delete_green_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bookmark_small_bar.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bookmark_small_bar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bookmark_small_bar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bookmark_small_bar.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bookmark_small_bar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\about_page_conent.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\home_icon_new.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\home_icon_new.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\home_icon_new.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\home_icon_new.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\home_icon_new.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\gradient.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\hands_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\hands_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hands_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\hands_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\hands_icon_clear_green.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bell_blank_red.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bell_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bell_off.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\humburger.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bookmark_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\default_blank_image.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Almadina.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Makkah.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Makkah_Full.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\kaaba_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\madinah_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kaaba_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\madinah_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kaaba_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\madinah_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\kaaba_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\madinah_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\kaaba_green_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\madinah_icon_green.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bookmark_footer_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bookmark_footer_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bookmark_footer_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bookmark_footer_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bookmark_footer_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\vertues_icon_round_small.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\virtue_clear_green_big.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\virtue_green_bg_big.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\vertues_icon_round_small.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\virtue_clear_green_big.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\virtue_green_bg_big.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\vertues_icon_round_small.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\virtue_clear_green_big.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\virtue_green_bg_big.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\vertues_icon_round_small.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\virtue_clear_green_big.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\virtue_green_bg_big.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\vertues_icon_round_small.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\virtue_clear_green_big.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\virtue_green_bg_big.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\more_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\more_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\more_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\more_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\more_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\loading.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\CarousalPage2.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\CarousalPage1.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MistaksInHaramin\MistaksInHaramin.csproj">
+      <Name>MistaksInHaramin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
